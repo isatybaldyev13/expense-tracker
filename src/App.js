@@ -1,4 +1,6 @@
 import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Index from "./pages";
 import Dashboard from "./pages/dashboard";
 import AuthProvider from "./providers/AuthProvider";
@@ -28,6 +30,7 @@ function App() {
           />
         </Routes>
       </BrowserRouter>
+      <ToastContainer />
     </AuthProvider>
   );
 }
